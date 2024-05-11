@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "query": "INSERT INTO statuses (status) VALUES ('Not started');"
+    },
+    {
+        "id": 2,
+        "query": "INSERT INTO statuses (status) VALUES ('Started');"
+
+    },
+    {
+        "id": 3,
+        "query": "INSERT INTO statuses (status) VALUES ('Completed');"
+    },
+    {
+        "id": 4,
+        "query": "INSERT INTO statuses (status) VALUES ('Deleted');"
+    }
+]

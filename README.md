@@ -1,42 +1,115 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/rS2-Rpoa)
+# Course Assignment Information
 
-![](http://143.42.108.232/pvt/Noroff-64.png)
-# Noroff
-## Back-end Development Year 1
-### REST API - Course Assignment 1 <sup>V2</sup>
+This is a REST API Course Assignment I got in the second semester of my Backend development degree. The task was to create a REST API back-end application using Expressjs for a Todo application.
 
-Startup code for Noroff back-end development 1 - REST API course.
+The *Initial Commit* is the original code I got for the assignment. The only code here that is mine is the .gitignore, which I added here to avoid package.json to be published.
 
-Instruction for the course assignment is in the LMS (Moodle) system of Noroff.
-[https://lms.noroff.no](https://lms.noroff.no)
-
-![](http://143.42.108.232/pvt/important.png)
-
-You will not be able to make any submission after the deadline of the course assignment. Make sure to make all your commit **BEFORE** the deadline
-
-![](http://143.42.108.232/pvt/help_small.png)
-
-If you are unsure of any instructions for the course assignment, contact out to your teacher on **Microsoft Teams**.
-
-**REMEMBER** Your Moodle LMS submission must have your repository link **AND** your Github username in the text file.
-
----
+The *Final Commit* is my finished code that I sent in for the assignment.
 
 # Application Installation and Usage Instructions
 
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/ArielHalsvik/REST-API-s-Course-Assignment
+    ```
+
+2. **Open the Terminal:**
+    ```bash
+    npm install
+    ```
+
+3. **Create an .env file:**
+    - Create an .env file.
+    - Paste in the text from *Environment Variables* down below.
+
+4. **Create the Database:**
+    - Open the mySQL application.
+    - Paste the text below into mySQL and run it.
+
+    ```bash
+    CREATE DATABASE myTodo;
+    ```
+
+5. **Create a user:**
+    - Paste the text from below into mySQL and run it.
+
+    ```bash
+    CREATE USER 'admin'@'localhost' IDENTIFIED WITH mysql_native_password BY 'P@ssw0rd';
+    ```
+    ```bash
+    GRANT ALL PRIVILEGES ON myTodo.* TO 'admin'@'localhost';
+    ```
+
+6. **Open the terminal again:**
+    ```bash
+    npm start
+    ```
+
+7. **Open the Application and test it:**
+    - Open a web browser.
+    - Input this link: http://localhost:3000/doc to see Swagger documentation. You can test the endpoints here.
+    - You can also use Postman to test the endpoints.
 
 # Environment Variables
 
+The following environment variables are required to run the application:
+
+HOST = "localhost"<br>
+ADMIN_USERNAME = "admin"<br>
+ADMIN_PASSWORD = "P@ssw0rd"<br>
+DATABASE_NAME = "myTodo"<br>
+DIALECT = "mysql"<br>
+PORT = "3000"<br>
+TOKEN_SECRET = 1a54e4e2218691c9b067184d1c3a2fe32b0f12a6fb932850c37a9cda0accd4887b54ca96f9830c15e8d39d22b60412ea958d56e8821bae119fe76ad716725fa3<br>
 
 # Additional Libraries/Packages
 
+This program was made using Express.
+
+Additional libraries/packages were used in this project.
+
+**Express JS**
+- https://expressjs.com/
+
+**EJS**
+- https://ejs.co/
+
+**Dotenv**
+- https://github.com/motdotla/dotenv
+
+**MySQL**
+- https://github.com/mysqljs/mysql
+
+**MySQL2**
+- https://github.com/sidorares/node-mysql2
+
+**Sequelize**
+- https://sequelize.org/
+
+**Cookie Parser**
+- https://github.com/expressjs/cookie-parser/tree/master
+
+**Crypto**
+- https://www.npmjs.com/package/crypto
+
+**Jest**
+- https://jestjs.io/
+
+**Jsend**
+- https://github.com/Prestaul/jsend#readme
+
+**JSON Web Token**
+- https://github.com/auth0/node-jsonwebtoken#readme
+
+**SuperTest**
+- https://github.com/ladjs/supertest#readme
+
+**Swagger Autogen**
+- https://swagger-autogen.github.io/docs/
+
+**Swagger UI Express**
+- https://github.com/scottie1984/swagger-ui-express
 
 # NodeJS Version Used
 
-
-# POSTMAN Documentation link
-
-
-
-
-
+NodeJS v20.10.0
