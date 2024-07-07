@@ -1,6 +1,6 @@
 # Course Assignment Information
 
-This is a REST API Course Assignment I got in the second semester of my Backend development degree. The task was to create a REST API back-end application using Expressjs for a Todo application.
+This is a REST API Course Assignment I got in the second semester of my Backend development degree. The task was to create a REST API back-end application using Expressjs for a Todo application. This task was done by me alone.
 
 The *Initial Commit* is the original code I got for the assignment. The only code here that is mine is the .gitignore, which I added here to avoid package.json to be published.
 
